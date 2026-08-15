@@ -1,7 +1,7 @@
-title: Plugin template
-description: Documentation for the Plugin template Obsidian plugin.
-url: https://dsebastien.github.io
-baseurl: /obsidian-plugin-template
+title: Neotree
+description: Documentation for the Neotree Obsidian plugin — a crisp, tactile rail for your file explorer.
+url: https://esperplena.github.io
+baseurl: /obsidian-neotree
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -9,7 +9,7 @@ plugins:
     - jekyll-remote-theme
 
 aux_links:
-    GitHub: https://github.com/dsebastien/obsidian-plugin-template
+    GitHub: https://github.com/Esperplena/obsidian-neotree
 
 search_enabled: true
 search:
@@ -25,9 +25,5 @@ exclude:
     - SUMMARY.md
 
 footer_content: >-
-    Made by <a href="https://dsebastien.net">Sébastien Dubois</a>.
-    Support this plugin: <a href="https://www.store.dsebastien.net/product/knowii-community/">Join Knowii</a> &middot;
-    <a href="https://github.com/sponsors/dsebastien">GitHub Sponsors</a> &middot;
-    <a href="https://www.buymeacoffee.com/dsebastien">Buy me a coffee</a> &middot;
-    <a href="https://youtube.com/@dsebastien">YouTube</a> &middot;
-    <a href="https://store.dsebastien.net">Products</a>
+    Made with ❤️ by <a href="https://github.com/Esperplena">Esperplena</a>.
+    <a href="https://github.com/Esperplena/obsidian-neotree">GitHub</a>

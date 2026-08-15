@@ -1,77 +1,97 @@
-# Obsidian Plugin Template (Bun)
+# Neotree
 
-A modern Obsidian plugin template using **Bun** as the package manager and bundler, with TypeScript, Tailwind CSS v4, ESLint, Prettier, and automated release workflows.
+A crisp, tactile rail for the Obsidian file explorer. A small draggable orb glides
+along the side of your file tree, snapping to tick marks and playing gentle sounds
+as it passes files and folders — making browsing your vault feel fast and satisfying.
+
+> Also known in-app as **Crisp File Explorer**.
 
 ## Features
 
-- **Bun** for fast package management and bundling
-- **TypeScript** with strict configuration
-- **Tailwind CSS v4** for styling
-- **ESLint + Prettier** for code quality
-- **Husky + lint-staged** for pre-commit hooks
-- **Commitizen + Conventional Commits** for standardized commit messages
-- **GitHub Actions** for CI/CD and automated releases
-- **Immer** for immutable state management
-- **Zod** for runtime validation
+- **Draggable orb** — grab the orb and glide it over your file tree. It springs
+  smoothly between rows and tilts as it moves.
+- **30+ orb styles** — sports balls, game characters, expressive faces, a gear,
+  superheroes and more, plus a **daily random** mode that picks a new style each day.
+- **Tick marks** — a rail with tick marks for every file and folder row. Ticks near
+  the orb swell and bend toward it.
+- **Sound feedback** — optional tick sounds while dragging (soft click, music-box
+  scale, wooden block, mechanical switch, water drop, 8-bit, watch gear, bubble, or a
+  style that follows the orb), pitch scaling as you move down the tree, and a
+  confirmation sound when you release.
+- **Today trail** — faint dots mark every file you opened today.
+- **Smart magnets** — the orb gently snaps to pinned files and to files you open
+  most often, so frequently used notes are always one glide away.
+- **Pin files** — right-click any file → **Pin to Crisp Rail** to keep it as a
+  permanent magnet (up to 8).
+- **Auto-expand folders** — hold the orb over a collapsed folder to expand it.
+- **Open on release** — drop the orb on a file to open it.
+- **Respects reduced motion** — disables animations under
+  `prefers-reduced-motion`.
+- **Popout-window aware** — works in file explorer popout windows too.
+- **Local & private** — everything runs in your vault; no network calls, no
+  telemetry, no analytics.
 
-## Getting Started
+## Install
 
-See [TEMPLATE_USAGE.md](./TEMPLATE_USAGE.md) for detailed instructions on how to use this template to create your own Obsidian plugin.
+### Community plugins
 
-## Quick Start
+Once listed in the community catalog: **Settings → Community plugins → Browse →
+Neotree → Install**.
 
-1. Click "Use this template" on GitHub to create a new repository
-2. Clone your new repository
-3. Follow the setup instructions in [TEMPLATE_USAGE.md](./TEMPLATE_USAGE.md)
-4. Run `bun install` to install dependencies
-5. Run `bun run dev` to start development
+### Manual / BRAT
 
-## Development
+Until the catalog listing is accepted, install from a [release](https://github.com/Esperplena/obsidian-neotree/releases):
 
-See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed development instructions.
+1. Download `main.js`, `styles.css`, and `manifest.json` from the latest release.
+2. Copy them into `<your-vault>/.obsidian/plugins/neotree/`.
+3. Reload Obsidian and enable **Neotree** under **Settings → Community plugins**.
 
-### Prerequisites
+Requires Obsidian **1.8.7** or newer.
 
-- [Bun](https://bun.sh/) (latest version)
-- [Git](https://git-scm.com/)
-- An Obsidian vault for testing
+## Usage
+
+The rail appears on the left edge of every file explorer pane. Drag the orb to
+glide over rows; the nearest row is highlighted. Release to open the file (or
+toggle a folder), optionally after auto-expanding it.
 
 ### Commands
 
-| Command             | Description                       |
-| ------------------- | --------------------------------- |
-| `bun install`       | Install dependencies              |
-| `bun run dev`       | Development build with watch mode |
-| `bun run build`     | Production build                  |
-| `bun run tsc:watch` | Type check in watch mode          |
-| `bun run lint`      | Run ESLint                        |
-| `bun run format`    | Format with Prettier              |
-| `bun test`          | Run tests                         |
+| Command             | Palette entry             |
+| ------------------- | ------------------------- |
+| Toggle folder marks | `Neotree: 切换文件夹刻度` |
+| Toggle tick sound   | `Neotree: 切换拖动音效`   |
 
-## Contributing
+### Settings
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
+- **小球与视觉 (Orb & visuals)** — orb style, incl. daily random.
+- **音效反馈 (Sound feedback)** — drag sound on/off, sound style, pitch scale,
+  release sound.
+- **活动与磁吸 (Activity & magnets)** — today trail and smart magnets.
+- **拖动与文件树 (Drag & file tree)** — include folders, open on release, and
+  auto-expand folders.
+
+## Development
+
+```bash
+bun install        # install dependencies
+bun run dev        # watch + build, copies to vault if OBSIDIAN_VAULT_LOCATION is set
+bun run build      # production build (main.js, styles.css into dist/)
+bun run tsc        # type-check (strict)
+bun run lint       # ESLint (zero warnings enforced)
+bun run format     # Prettier
+bun test           # run tests
+```
+
+To auto-copy the build to your vault, set `OBSIDIAN_VAULT_LOCATION` to the vault
+folder before running `bun run dev`.
+
+The plugin id is `neotree` (set in `manifest.json`), so the vault folder is
+`.obsidian/plugins/neotree/`.
 
 ## License
 
-MIT License - see [LICENSE](./LICENSE) for details.
+MIT — see [LICENSE](./LICENSE).
 
-<!-- support-cta -->
+## Support
 
-## News & support
-
-To stay up to date about this plugin, Obsidian in general, Personal Knowledge Management and note-taking:
-
-- Subscribe to [my newsletter](https://dsebastien.net/newsletter)
-- Subscribe to [my YouTube channel](https://youtube.com/@dsebastien)
-- Join the [Knowii community](https://www.store.dsebastien.net/product/knowii-community/) and learn to organize your notes and put your knowledge to work, together with fellow knowledge workers
-
-If this plugin is useful to you, here are the best ways to support my work ❤️:
-
-- [Join the Knowii community](https://www.store.dsebastien.net/product/knowii-community/)
-- [Become a GitHub Sponsor](https://github.com/sponsors/dsebastien)
-- [Buy me a coffee](https://www.buymeacoffee.com/dsebastien)
-- [Subscribe to my YouTube channel](https://youtube.com/@dsebastien)
-- [Check out my products](https://store.dsebastien.net)
-
-Found a bug or have an idea? [Open an issue](https://github.com/dsebastien/obsidian-plugin-template/issues).
+Found a bug or have a feature idea? [Open an issue](https://github.com/Esperplena/obsidian-neotree/issues).

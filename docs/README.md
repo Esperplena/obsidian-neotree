@@ -4,46 +4,31 @@ nav_order: 1
 permalink: /
 ---
 
-# Plugin Name
+# Neotree
 
-TODO: Add a brief description of what your plugin does.
+A crisp, tactile rail for the Obsidian file explorer. A small draggable orb glides
+along the side of your file tree, snapping to tick marks and playing gentle sounds
+as it passes files and folders — making browsing your vault feel fast and satisfying.
 
 ## Key Features
 
-TODO: List 3-5 key features of your plugin.
-
-- Feature 1
-- Feature 2
-- Feature 3
+- **Draggable orb** with 30+ styles and a **daily random** mode.
+- **Tick marks** that swell and bend as the orb glides past rows.
+- **Sound feedback** while dragging and when releasing (multiple styles, pitch scale).
+- **Today trail** — faint dots marking files opened today.
+- **Smart magnets** — the orb gently snaps to pinned and frequently used files.
+- **Auto-expand folders** and **open on release**.
+- Respects `prefers-reduced-motion`, works in popout windows, fully local & private.
 
 ## Quick Start
 
-TODO: Add quick start instructions.
-
-1. Install the plugin
-2. Configure settings
-3. Start using
+1. Install the plugin (see [README](../README.md#install)).
+2. The rail appears on the left edge of every file explorer pane.
+3. Drag the orb to glide over rows; release to open a file or toggle a folder.
+4. Tune behavior in **Settings → Neotree**.
 
 ## About
 
-Created by [Your Name](https://your-website.com).
+Created by [Esperplena](https://github.com/Esperplena).
 
-TODO: Update author information and support links.
-
-<!-- support-cta -->
-
-## News & support
-
-To stay up to date about this plugin, Obsidian in general, Personal Knowledge Management and note-taking:
-
-- Subscribe to [my newsletter](https://dsebastien.net/newsletter)
-- Subscribe to [my YouTube channel](https://youtube.com/@dsebastien)
-- Join the [Knowii community](https://www.store.dsebastien.net/product/knowii-community/) and learn to organize your notes and put your knowledge to work, together with fellow knowledge workers
-
-If this plugin is useful to you, here are the best ways to support my work ❤️:
-
-- [Join the Knowii community](https://www.store.dsebastien.net/product/knowii-community/)
-- [Become a GitHub Sponsor](https://github.com/sponsors/dsebastien)
-- [Buy me a coffee](https://www.buymeacoffee.com/dsebastien)
-- [Subscribe to my YouTube channel](https://youtube.com/@dsebastien)
-- [Check out my products](https://store.dsebastien.net)
+Found a bug or have a feature idea? [Open an issue](https://github.com/Esperplena/obsidian-neotree/issues).

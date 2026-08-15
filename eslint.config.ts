@@ -16,6 +16,10 @@ export default defineConfig([
             '**/dist/**',
             '**/node_modules/**',
             'scripts/**',
+            // Legacy single-file bundle & hand-built CSS at the repo root;
+            // superseded by the src/ build pipeline.
+            'main.js',
+            'styles.css',
             '.cz-config.cjs',
             'prettier.config.cjs',
             'package.json'

@@ -1,11 +1,10 @@
 {
-    "name": "obsidian-my-plugin",
+    "name": "neotree",
     "version": "2.7.0",
-    "description": "TODO: describe what your plugin does (must end with a period, must not contain the word \"Obsidian\", must not start with the plugin name).",
+    "description": "A crisp, tactile rail that makes browsing your vault faster and more pleasant.",
     "author": {
-        "name": "Your Name",
-        "email": "your-email@example.com",
-        "url": "https://your-website.com"
+        "name": "Esperplena",
+        "email": "yuzihanw@qq.com"
     },
     "keywords": [
         "obsidian",
@@ -15,12 +14,12 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/your-username/obsidian-my-plugin.git"
+        "url": "git+https://github.com/Esperplena/obsidian-neotree.git"
     },
     "bugs": {
-        "url": "https://github.com/your-username/obsidian-my-plugin/issues"
+        "url": "https://github.com/Esperplena/obsidian-neotree/issues"
     },
-    "homepage": "https://github.com/your-username/obsidian-my-plugin",
+    "homepage": "https://github.com/Esperplena/obsidian-neotree",
     "engines": {
         "node": ">=20.0.0",
         "npm": ">=10.1.0"
@@ -50,7 +49,6 @@
         "commit": "cz",
         "cm": "cz",
         "commit:lint": "commitlint --edit",
-        "init": "bun scripts/init-from-template.ts",
         "release:update-version": "bun scripts/update-version.ts",
         "release:version-bump": "bun scripts/version-bump.ts",
         "release:changelog": "bun scripts/generate-changelog.ts",
